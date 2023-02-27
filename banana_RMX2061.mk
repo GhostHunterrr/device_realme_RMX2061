@@ -14,10 +14,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := aosp_RMX2061
+PRODUCT_NAME := banana_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
