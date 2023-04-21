@@ -19,10 +19,10 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := spark_RMX2061
+PRODUCT_NAME := banana_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
