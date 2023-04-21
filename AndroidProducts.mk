@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_RMX2061.mk
+    $(LOCAL_DIR)/banana_RMX2061.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    spark_RMX2061-user \
-    spark_RMX2061-userdebug \
-    spark_RMX2061-eng
+    banana_RMX2061-user \
+    banana_RMX2061-userdebug \
+    banana_RMX2061-eng
