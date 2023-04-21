@@ -19,7 +19,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/spark/config/common.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Device identifier
 PRODUCT_NAME := banana_RMX2061
