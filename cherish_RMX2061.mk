@@ -12,6 +12,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 BANANA_MAINTAINER := GhostHunter
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=GhostHunter
+
 # Target
 TARGET_SUPPORTS_QUICK_TAP := true
 
@@ -19,10 +22,10 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Device identifier
-PRODUCT_NAME := banana_RMX2061
+PRODUCT_NAME := cherish_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
