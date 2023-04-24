@@ -10,6 +10,8 @@ $(call inherit-product, device/realme/RMX2061/device.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+WITH_GAPPS=true
+
 BANANA_MAINTAINER := GhostHunter
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -22,10 +24,10 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Device identifier
-PRODUCT_NAME := cherish_RMX2061
+PRODUCT_NAME := banana_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
