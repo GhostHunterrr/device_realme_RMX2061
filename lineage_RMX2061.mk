@@ -20,25 +20,29 @@ TARGET_SUPPORTS_QUICK_TAP := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/banana/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 
 # GApps Build
 WITH_GAPPS := true
-
 # Core GApps, WITH_GAPPS needs to be true
-BUILD_CORE_GAPPS := true
-
+BUILD_CORE_GAPPS := false
 # Core GApps Extras
 BUILD_CORE_GAPPS_EXTRA := true
-
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_HAS_UDFPS := false
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+TARGET_BUILD_APERTURE_CAMERA := true
+# Pixel
+WITH_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+RISING_MAINTAINER := GhostHunter
 
 
 # Device identifier
-PRODUCT_NAME := banana_RMX2061
+PRODUCT_NAME := lineage_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
