@@ -36,3 +36,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
    ApertureOverlay 
    
+   
+   # KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
+
