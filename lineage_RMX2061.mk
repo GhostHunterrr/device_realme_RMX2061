@@ -7,39 +7,34 @@
 # Inherit from RMX2061 device
 $(call inherit-product, device/realme/RMX2061/device.mk)
 
+# Inherit some common AOSP stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Maintainer 
+BANANA_MAINTAINER := GhostHunter
+RISING_MAINTAINER := GhostHunter
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
-
-BANANA_MAINTAINER := GhostHunter
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=GhostHunter
 
 # Target
 TARGET_SUPPORTS_QUICK_TAP := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Inherit some common AOSP stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-
-# GApps Build
-WITH_GAPPS := true
-# Core GApps, WITH_GAPPS needs to be true
-BUILD_CORE_GAPPS := false
-# Core GApps Extras
-BUILD_CORE_GAPPS_EXTRA := true
-TARGET_USE_PIXEL_FINGERPRINT := false
-TARGET_HAS_UDFPS := false
-TARGET_BUILD_GRAPHENEOS_CAMERA := false
-TARGET_BUILD_APERTURE_CAMERA := true
-# Pixel
-WITH_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-RISING_MAINTAINER := GhostHunter
 
+TARGET_ENABLE_BLUR := true
+
+TARGET_BUILD_APERTURE_CAMERA := true
+
+TARGET_USE_GOOGLE_TELEPHONY := true
+
+WITH_GMS := true
+
+TARGET_CORE_GMS := true
+
+TARGET_USE_PIXEL_FINGERPRINT := false
 
 # Device identifier
 PRODUCT_NAME := lineage_RMX2061
