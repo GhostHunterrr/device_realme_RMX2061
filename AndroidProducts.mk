@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_RMX2061.mk
+    $(LOCAL_DIR)/banana_RMX2061.mk
 
 
 COMMON_LUNCH_CHOICES := \
-   lineage_RMX2061-user \
-    lineage_RMX2061-userdebug \
-    lineage_RMX2061-eng
+   banana_RMX2061-user \
+    banana_RMX2061-userdebug \
+   banana_RMX2061-eng
