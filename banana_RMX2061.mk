@@ -8,7 +8,7 @@
 $(call inherit-product, device/realme/RMX2061/device.mk)
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Maintainer 
 BANANA_MAINTAINER := GhostHunter
@@ -42,7 +42,7 @@ TARGET_EXCLUDES_APERTURE := false
 RISING_PACKAGE_TYPE := GAPPS
 
 # Device identifier
-PRODUCT_NAME := lineage_RMX2061
+PRODUCT_NAME := banana_RMX2061
 PRODUCT_DEVICE := RMX2061
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2061
